@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+body {
+    height: 100vh;
+    background: linear-gradient(#000000 50%, #7df9ff 50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    background-color: #1e1e21;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 2em;
+    display: block;
+    width: min(90%, 40em);
+    height: calc(min(105%, 40em) * 0.75);
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    transform: translate(-50%, -50%);
+
+}
+
+.teams {
+    text-align: center;
+    background-color: #353638;
+    padding: 1em;
+    border-radius: 0.5em;
+    color: #7df9ff;
+    
+}
+
+.score {
+    font-size: 9em;
+    color: aliceblue;
+}
+
+.timer {
+    position: relative;
+    top: -8em;
+    left: 2.5em;
+    width: 15%;
+    color: aliceblue;
+    font-size: large;
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.btn {
+    background-color: #1e1e21;
+    color: #7df9ff;
+    font-size: 0.8em;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+.foul {
+    display: flex;
+    justify-content: space-evenly;
+    color: aliceblue;
+    padding: 0.7em;
+
+
+}
+
+.foul-score {
+    background-color: #1e1e21;
+    color: aliceblue;
+    width: 30%;
+    padding: 0.4em;
+
+}
+
+.reset-btn {
+    position: relative;
+    top: -15em;
+    left: 14em;
+    background-color: #353638;
+    border: 3px solid #7df9ff;
+    color: #7df9ff;
+    height: 5em;
+    width: 7em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.other {
+    padding-bottom: 1em;
+}
+
+
+.input {
+    position: relative;
+    top: 1em;
+    background-color: #1e1e21;
+    color: aliceblue;
+    padding-top: 0.5em;
+    margin-bottom: 2em;
+    border: 3px solid #7df9ff;
+    border-radius: 0.3em;
+
+}
+
+/* Media Queries for Mobile and Tablet Views */
+@media (max-width: 768px) {
+    .score {
+        font-size: 5em;
+    }
+    .timer {
+        top: -6em;
+        left: 1em;
+        width: 20%;
+        font-size: medium;
+    }
+    .btn {
+        font-size: 0.6em;
+        padding: 0.4em;
+    }
+    .reset-btn {
+        top: -10em;
+        left: 10em;
+        height: 4em;
+        width: 5em;
+    }
+    .foul-score {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        width: 100%;
+        height: auto;
+        padding: 1em;
+        grid-template-columns: 1fr;
+    }
+    .teams {
+        padding: 0.5em;
+    }
+    .score {
+        font-size: 3em;
+    }
+    .timer {
+        top: -4em;
+        left: 0.5em;
+        width: 25%;
+        font-size: small;
+    }
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        font-size: 0.5em;
+        padding: 0.3em;
+        margin: 0.5em 0;
+    }
+    .reset-btn {
+        top: -8em;
+        left: 6em;
+        height: 3em;
+        width: 4em;
+    }
+    .foul-score {
+        width: 50%;
+    }
+}
+
