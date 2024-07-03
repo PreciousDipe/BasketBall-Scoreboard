@@ -36,11 +36,3 @@ To get a local copy up and running, follow these steps:
 2. **Navigate to the project directory:**
     ```bash
     cd Basketball-Scoreboard
-3. **File Structure**
-   ```bash
-   Basketball-Scoreboard/
-│
-├── index.html         # Main HTML file
-├── styles.css         # Main CSS file
-├── script.js          # Main JavaScript file
-├── README.md          # Readme file
