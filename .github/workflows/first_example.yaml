@@ -9,3 +9,6 @@ jobs:
     environment: production
     steps:
       - name: deploy
+        run: |
+          echo "My first github actions job"
+
